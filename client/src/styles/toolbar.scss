@@ -10,14 +10,50 @@
     box-shadow: 0 4px 5px gray;
     z-index:999;
 
-    
+
    &__btn{
     height:25px;
     width:25px;
     border:none;
     outline:none;
     cursor:pointer;
+    background-size: cover;
+    margin-left:10px;
 } 
+.brush{
+    background: url('../assets/images/brush.png') no-repeat center center;
+    background-size: cover;
+}
+.rect{
+    background: url('../assets/images/rectangle.png') no-repeat center center;
+    background-size: cover;
+}
+.circle{
+    background: url('../assets/images/circle.png') no-repeat center center;
+    background-size: cover;
+}
+.eraser{
+    background: url('../assets/images/eraser.png') no-repeat center center;
+    background-size: cover;
+}
+.line{
+    background: url('../assets/images/line.png') no-repeat center center;
+    background-size: cover;
+}
+.undo{
+    margin-left: auto;
+    background: url('../assets/images/undo.png') no-repeat center center;
+    background-size: cover;
+}
+.redo{
+    background: url('../assets/images/redo.png') no-repeat center center;
+    background-size: cover;
+}
+.save{
+    margin-right: 10px;
+    background: url('../assets/images/save.png') no-repeat center center;
+    background-size: cover;
+}
 }
 
 
