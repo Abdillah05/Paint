@@ -1,11 +1,20 @@
-import{makeAutoObservable} from 'mobx'
-class ToolState{
-     tool = null
-    constructro(){
-        makeAutoObservable(this)
-    }
-    setTool(tool){
-        this.tool = tool
-    }
+import { makeAutoObservable } from 'mobx';
+class ToolState {
+  tool = null;
+  constructro() {
+    makeAutoObservable(this);
+  }
+  setTool(tool) {
+    this.tool = tool;
+  }
+  setFillColor(color) {
+    this.tool.fillColor = color;
+  }
+  setStrokeColor(color) {
+    this.tool.strokeColor = color;
+  }
+  setLineWidth(width) {
+    this.tool.lineWidth = width;
+  }
 }
-export default new ToolState()
+export default new ToolState();

@@ -27,6 +27,6 @@ if(this.mouseDown){
     draw(x, y){
         this.ctx.lineTo(x, y)
         this.ctx.stroke()
-        console.log('draw brush')
+        
     }
 }
