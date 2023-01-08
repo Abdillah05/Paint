@@ -30,17 +30,30 @@ export default class Rect extends Tool {
       this.draw(this.startX, this.startY, width, height);
     }
   }
+//   draw(x, y, w, h) {
+//     const img = new Image();
+//     img.src = this.saved;
+//     img.onLoad = () => {
+//       this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+//       this.ctx.drawImage(img, 0, 0, this.canvas.width, this.canvas.height);
+//       this.ctx.beginPath();
+//       this.ctx.rect(x, y, w, h);
+//       this.ctx.fill();
+//       this.ctx.stroke();
+//     };
+//     // img.onLoad();
+//   }
+
   draw(x, y, w, h) {
-    const img = new Image();
-    img.src = this.saved;
-    img.onLoad = () => {
-      this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-      this.ctx.drawImage(img, 0, 0, this.canvas.width, this.canvas.height);
-      this.ctx.beginPath();
-      this.ctx.rect(x, y, w, h);
-      this.ctx.fill();
-      this.ctx.stroke();
-    };
-    img.onLoad();
-  }
+    const img = new Image()
+    img.src = this.saved
+    img.onload = () => {
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height)
+        this.ctx.drawImage(img, 0, 0, this.canvas.width, this.canvas.height)
+        this.ctx.beginPath()
+        this.ctx.rect(x, y, w, h)
+        this.ctx.fill()
+        this.ctx.stroke()
+    }
+}
 }
